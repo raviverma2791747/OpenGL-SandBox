@@ -206,6 +206,13 @@
     <None Include="Res\shaders\TestTriangle2D.shader" />
     <None Include="Res\shaders\TextureCube.shader" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Diffusion.png" />
+    <Image Include="Res\textures\gold.jpg" />
+    <Image Include="Res\textures\rock.png" />
+    <Image Include="Res\textures\rust.jpg" />
+    <Image Include="Res\textures\test.JPG" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

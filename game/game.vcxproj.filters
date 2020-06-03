@@ -155,4 +155,21 @@
     <None Include="Res\shaders\LightingCube.shader" />
     <None Include="Res\shaders\DiffusionLightingCube.shader" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\textures\test.JPG">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\textures\rust.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\textures\rock.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\textures\gold.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Diffusion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
