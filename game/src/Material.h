@@ -9,6 +9,12 @@ struct Material
 	float shininess;
 };
 
+struct MaterialTexture
+{
+	glm::vec3 specular;
+	float shininess;
+};
+
 struct Light {
 	glm::vec3 position;
 	glm::vec3 ambient;

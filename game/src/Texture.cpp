@@ -14,6 +14,7 @@ Texture2D::Texture2D(const std::string& path):
 
 	GLCall(glGenTextures(1, &m_RendererID));
 	GLCall(glBindTexture(GL_TEXTURE_2D,m_RendererID));
+	GLCall(glGenerateMipmap(GL_TEXTURE_2D));
 
 	GLCall(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR));
 	GLCall(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR));

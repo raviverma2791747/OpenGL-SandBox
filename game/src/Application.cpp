@@ -25,6 +25,7 @@
 #include"tests/DiffusionLighting.h"
 #include"tests/SpecularLighting.h"
 #include"tests/MaterialTest.h"
+#include"tests/LightMapTest.h"
 
 int main(void)
 {
@@ -79,6 +80,7 @@ int main(void)
         testMenu->RegisterTest<test::DiffusionLightingCube>("Diffusion Lighting Cube");
         testMenu->RegisterTest<test::SpecularLightingCube>("Specular Lighting Cube");
         testMenu->RegisterTest<test::MaterialTest>("MaterialTest");
+        testMenu->RegisterTest<test::LightMapTest>("LightMapTest");
 
         while (!glfwWindowShouldClose(window))
         {
