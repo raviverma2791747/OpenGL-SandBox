@@ -19,5 +19,8 @@ A opengl sandbox contains opengl examples
 <br>Diffusion Lighting Example<br>
 ![](https://github.com/raviverma2791747/OpenGL-SandBox/blob/master/game/Assets/Diffusion.png)
 
-</br>Specular + Diffusion + Ambient or Just Phong or Specular Lighting Example<br>
+<br>Specular + Diffusion + Ambient or Just Phong or Specular Lighting Example<br>
 ![](https://github.com/raviverma2791747/OpenGL-SandBox/blob/master/game/Assets/specular.png)
+
+<br>Material Test<br>
+![](https://github.com/raviverma2791747/OpenGL-SandBox/blob/master/game/Assets/material%20test.png)
