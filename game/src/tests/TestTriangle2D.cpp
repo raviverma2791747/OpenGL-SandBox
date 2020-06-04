@@ -23,9 +23,9 @@ namespace test
 
         float positions[] =
         {
-           -50.0f, -50.0f, 0.0f, 0.0f, // 0
-            50.0f, -50.0f, 1.0f, 0.0f, // 1
-            50.0f,  50.0f, 1.0f, 1.0f, // 2
+             50.0f,  50.0f,   1.0f, 1.0f, // 0
+            200.0f,  50.0f,   1.0f , 1.0f,// 1
+            200.0f,  200.0f,  1.0f , 1.0f// 2
         };
 
         unsigned int indices[] = {
@@ -34,7 +34,7 @@ namespace test
     
         m_VertexBuffer = std::make_unique<VertexBuffer>(positions, 3 * 4 * sizeof(float));
         VertexBufferLayout layout;
-        layout.Push<float>(2);
+        layout.Push<float>(4);
         m_VAO->AddBuffer(*m_VertexBuffer, layout);
 
         m_IndexBuffer = std::make_unique<IndexBuffer>(indices, 3);

@@ -76,7 +76,7 @@ namespace test
         m_shader = std::make_unique<Shader>("Res/shaders/TextureCube.shader");
         m_shader->Bind();
 
-        m_texture = std::make_unique<Texture2D>("Res/textures/gold.jpg");
+        m_texture = std::make_unique<Texture2D>("Res/textures/rust.jpg");
         m_texture->Bind();
         m_shader->SetUniform1i("u_texture",0); 
     }

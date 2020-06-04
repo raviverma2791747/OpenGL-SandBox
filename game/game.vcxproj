@@ -210,6 +210,11 @@
     <None Include="Res\shaders\TextureCube.shader" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Assets\2D texture.png" />
+    <Image Include="Assets\2D triangle.png" />
+    <Image Include="Assets\3D cube.png" />
+    <Image Include="Assets\3D textuured cube.png" />
+    <Image Include="Assets\clearcolor.png" />
     <Image Include="Assets\Diffusion.png" />
     <Image Include="Assets\specular.png" />
     <Image Include="Res\textures\gold.jpg" />

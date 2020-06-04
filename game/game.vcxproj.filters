@@ -181,5 +181,20 @@
     <Image Include="Assets\specular.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Assets\clearcolor.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\3D cube.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\2D triangle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\2D texture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\3D textuured cube.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

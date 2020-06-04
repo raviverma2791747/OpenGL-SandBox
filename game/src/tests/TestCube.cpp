@@ -10,9 +10,9 @@ namespace test
 {
     TestCube::TestCube():
         m_proj(glm::perspective(glm::radians(45.0f),(float)960/540,0.1f,100.0f)),
-        m_translate(400,356,607),
-        m_camera(405,356,612),
-        m_look(224,310,360),
+        m_translate(0,0,0),
+        m_camera(20,0,0),
+        m_look(0,0,0),
         m_rotate(0,0,0),
         m_scale(1,1,1)
 	{
