@@ -23,6 +23,7 @@
 #include"tests/TestCube.h"
 #include"tests/TextureCube.h"
 #include"tests/DiffusionLighting.h"
+#include"tests/SpecularLighting.h"
 
 int main(void)
 {
@@ -74,9 +75,8 @@ int main(void)
         testMenu->RegisterTest<test::TestTriangle2D>("2D Triangle");
         testMenu->RegisterTest<test::TestCube>("3D Cube");
         testMenu->RegisterTest<test::TextureCube>("3D Textured Cube");
-        testMenu->RegisterTest<test::DiffusionLightingCube>("Lighting Cube");
-
-        test::TestClearColor test;
+        testMenu->RegisterTest<test::DiffusionLightingCube>("Diffusion Lighting Cube");
+        testMenu->RegisterTest<test::SpecularLightingCube>("Specular Lighting Cube");
 
         while (!glfwWindowShouldClose(window))
         {
