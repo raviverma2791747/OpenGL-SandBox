@@ -111,8 +111,8 @@ namespace test
             m_shader->SetUniform3f("material.specular",m_material.specular);
             m_shader->SetUniform1f("material.shininess",m_material.shininess);
             m_shader->SetUniform3f("light.position",m_light.position);
-            m_shader->SetUniform3f("light.ambient", m_light.ambient);
-            m_shader->SetUniform3f("light.diffuse", m_light.diffuse);
+            m_shader->SetUniform3f("light.ambient", m_light.ambient * m_light.diffuse * m_lightcolor);
+            m_shader->SetUniform3f("light.diffuse", m_light.diffuse * m_lightcolor);
             m_shader->SetUniform3f("light.specular", m_light.specular);
             renderer.Draw(*m_vao, *m_shader, m_vb->GetCount());
             m_vao->Unbind();
@@ -131,6 +131,7 @@ namespace test
         ImGui::SliderFloat3("specular",&m_material.specular.x, 0.0f, 1.0f);
         ImGui::SliderFloat("shininess",&m_material.shininess, 0.0f, 256.0f);
         ImGui::Text("Light Controls");
+        ImGui::SliderFloat3("color",    &m_lightcolor.x, 0.0f, 1.0f);
         ImGui::SliderFloat3("position", &m_light.position.x, -15.0f, 15.0f);
         ImGui::SliderFloat3("ambient",  &m_light.ambient.x, 0.0f, 1.0f);
         ImGui::SliderFloat3("diffuse",  &m_light.diffuse.x, 0.0f, 1.0f);

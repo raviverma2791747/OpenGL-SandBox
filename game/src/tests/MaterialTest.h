@@ -31,6 +31,8 @@ namespace test
 		glm::vec3 m_camera;
 		glm::vec3 m_look;
 
+		glm::vec3 m_lightcolor;
+
 		Material m_material;
 		Light m_light;
 	};

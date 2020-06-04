@@ -206,5 +206,8 @@
     <Image Include="Assets\3D textuured cube.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Assets\material test.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
