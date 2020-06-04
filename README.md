@@ -23,4 +23,4 @@ A opengl sandbox contains opengl examples
 ![](https://github.com/raviverma2791747/OpenGL-SandBox/blob/master/game/Assets/specular.png)
 
 <br>Material Test<br>
-![](https://github.com/raviverma2791747/OpenGL-SandBox/blob/master/game/Assets/material-test.png)
+![](https://github.com/raviverma2791747/OpenGL-SandBox/blob/master/game/Assets/material%20test.png)
