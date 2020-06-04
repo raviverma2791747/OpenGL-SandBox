@@ -24,6 +24,7 @@
 #include"tests/TextureCube.h"
 #include"tests/DiffusionLighting.h"
 #include"tests/SpecularLighting.h"
+#include"tests/MaterialTest.h"
 
 int main(void)
 {
@@ -77,6 +78,7 @@ int main(void)
         testMenu->RegisterTest<test::TextureCube>("3D Textured Cube");
         testMenu->RegisterTest<test::DiffusionLightingCube>("Diffusion Lighting Cube");
         testMenu->RegisterTest<test::SpecularLightingCube>("Specular Lighting Cube");
+        testMenu->RegisterTest<test::MaterialTest>("MaterialTest");
 
         while (!glfwWindowShouldClose(window))
         {

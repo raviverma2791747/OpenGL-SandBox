@@ -157,6 +157,7 @@
     <ClCompile Include="src\Renderer.cpp" />
     <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\tests\DiffusionLighting.cpp" />
+    <ClCompile Include="src\tests\MaterialTest.cpp" />
     <ClCompile Include="src\tests\SpecularLighting.cpp" />
     <ClCompile Include="src\tests\Test.cpp" />
     <ClCompile Include="src\tests\TestClearColor.cpp" />
@@ -175,9 +176,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\IndexBuffer.h" />
+    <ClInclude Include="src\Material.h" />
     <ClInclude Include="src\Renderer.h" />
     <ClInclude Include="src\Shader.h" />
     <ClInclude Include="src\tests\DiffusionLighting.h" />
+    <ClInclude Include="src\tests\MaterialTest.h" />
     <ClInclude Include="src\tests\SpecularLighting.h" />
     <ClInclude Include="src\tests\Test.h" />
     <ClInclude Include="src\tests\TestClearColor.h" />
@@ -204,6 +207,7 @@
     <None Include="Res\shaders\Basic.shader" />
     <None Include="Res\shaders\DiffusionLightingCube.shader" />
     <None Include="Res\shaders\LightingCube.shader" />
+    <None Include="Res\shaders\MaterialTest.shader" />
     <None Include="Res\shaders\SpecularLightingCube.shader" />
     <None Include="Res\shaders\TestCube.shader" />
     <None Include="Res\shaders\TestTriangle2D.shader" />

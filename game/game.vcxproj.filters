@@ -75,6 +75,9 @@
     <ClCompile Include="src\tests\SpecularLighting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\tests\MaterialTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\IndexBuffer.h">
@@ -152,6 +155,12 @@
     <ClInclude Include="src\tests\SpecularLighting.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\tests\MaterialTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Res\shaders\TestCube.shader" />
@@ -161,6 +170,7 @@
     <None Include="Res\shaders\LightingCube.shader" />
     <None Include="Res\shaders\DiffusionLightingCube.shader" />
     <None Include="Res\shaders\SpecularLightingCube.shader" />
+    <None Include="Res\shaders\MaterialTest.shader" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Res\textures\test.JPG">
