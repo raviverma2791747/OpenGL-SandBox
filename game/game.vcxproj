@@ -239,6 +239,9 @@
     <Image Include="Res\textures\rust.jpg" />
     <Image Include="Res\textures\test.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <Object Include="Res\models\male\MaleBodyMesh.obj" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
