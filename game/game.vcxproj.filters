@@ -81,6 +81,12 @@
     <ClCompile Include="src\tests\LightMapTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\tests\MeshTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\IndexBuffer.h">
@@ -167,6 +173,18 @@
     <ClInclude Include="src\tests\LightMapTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\vendor\assimp\mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vendor\assimp\aabb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\MeshTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Res\shaders\TestCube.shader" />
@@ -178,6 +196,7 @@
     <None Include="Res\shaders\SpecularLightingCube.shader" />
     <None Include="Res\shaders\MaterialTest.shader" />
     <None Include="Res\shaders\LightMapTest.shader" />
+    <None Include="Res\models\male\Male.shader" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Res\textures\test.JPG">

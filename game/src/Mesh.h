@@ -1,33 +1,34 @@
 #pragma once
-#include"Renderer.h"
 #include"VertexArray.h"
 #include"VertexBuffer.h"
+#include"IndexBuffer.h"
 #include"Texture.h"
+#include"Shader.h"
 #include"vendor/glm/glm/glm.hpp"
 #include"vendor/glm/glm/gtc/matrix_transform.hpp"
-#include"memory"
+#include<memory>
+
 
 struct Vertex
 {
+    // position
     glm::vec3 Position;
+    // normal
     glm::vec3 Normal;
-    glm::vec2 TexCoords;
 };
 
 class Mesh
 {
 private:
-    std::unique_ptr<VertexArray> vao;
-    std::unique_ptr<VertexBuffer> vb;
-    std::unique_ptr<IndexBuffer> ib;
-    std::unique_ptr<Shader> shader;
-    std::vector<Vertex> vertices;
-    std::vector<GLint> indices;
-    std::vector<Texture2D> textures;
+    std::vector<Vertex> m_vertices;
+    std::vector<unsigned int> m_indices;
 public:
-    Mesh(const std::vector<Vertex>& vertices,
-        const std::vector<GLint>& indices,
-        const std::vector<Texture2D>& textures );
+    std::unique_ptr<VertexArray> m_vao;
+    std::unique_ptr<VertexBuffer> m_vb;
+    std::unique_ptr<IndexBuffer> m_ib;
+    std::unique_ptr<Shader> m_shader;
+    Mesh(const std::string mesh_path, const std::string& shader_path);
     ~Mesh();
-    void Draw();
+    void Bind() const;
+    void UnBind() const;
 };

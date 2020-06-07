@@ -26,6 +26,7 @@
 #include"tests/SpecularLighting.h"
 #include"tests/MaterialTest.h"
 #include"tests/LightMapTest.h"
+#include"tests/MeshTest.h"
 
 int main(void)
 {
@@ -81,6 +82,7 @@ int main(void)
         testMenu->RegisterTest<test::SpecularLightingCube>("Specular Lighting Cube");
         testMenu->RegisterTest<test::MaterialTest>("MaterialTest");
         testMenu->RegisterTest<test::LightMapTest>("LightMapTest");
+        testMenu->RegisterTest<test::MeshTest>("Mesh Test");
 
         while (!glfwWindowShouldClose(window))
         {

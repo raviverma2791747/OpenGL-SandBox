@@ -17,7 +17,7 @@ namespace test
         m_look(0, 0, 0),
         m_lightcolor(1.0f,1.0f,1.0f),
         m_shininess(32),
-        m_light{ glm::vec3(0.0f, 5.0f, 0.0f),glm::vec3(0.2f, 0.2f, 0.2f),glm::vec3(0.5f, 0.5f, 0.5f),glm::vec3(1.0f, 1.0f, 1.0f) }
+        m_light{ glm::vec3(0.0f, 0.0f, 0.0f),glm::vec3(0.2f, 0.2f, 0.2f),glm::vec3(0.5f, 0.5f, 0.5f),glm::vec3(1.0f, 1.0f, 1.0f) }
     {
         GLfloat vertices[] = {
               -1.0f, -1.0f, -1.0f, 1.0f,  0.0f,  0.0f, -1.0f,  0.0f,  0.0f,
@@ -80,12 +80,11 @@ namespace test
         m_shader = std::make_unique<Shader>("Res/shaders/LightMapTest.shader");
         m_shader->Bind();
         m_texture = std::make_unique<Texture2D>("Res/textures/container.png");
-        m_texture->Bind(0);
+        m_texture->Bind();
         m_shader->SetUniform1i("material.diffuse", 0);
         m_spec_texture = std::make_unique<Texture2D>("Res/textures/container_specular.png");
         m_spec_texture->Bind(1);
         m_shader->SetUniform1i("material.specular", 1);
-        m_shader->Bind();
     }
 
     LightMapTest::~LightMapTest()
@@ -116,8 +115,8 @@ namespace test
             m_shader->SetUniform3f("viewpos", m_camera);
             m_shader->SetUniform1f("material.shininess", m_shininess);
             m_shader->SetUniform3f("light.position", m_light.position);
-            m_shader->SetUniform3f("light.ambient", m_light.ambient * m_light.diffuse * m_lightcolor);
-            m_shader->SetUniform3f("light.diffuse", m_light.diffuse * m_lightcolor);
+            m_shader->SetUniform3f("light.ambient", m_light.ambient );
+            m_shader->SetUniform3f("light.diffuse", m_light.diffuse);
             m_shader->SetUniform3f("light.specular", m_light.specular);
             renderer.Draw(*m_vao, *m_shader, m_vb->GetCount());
         }

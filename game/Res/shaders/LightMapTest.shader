@@ -13,10 +13,11 @@ uniform mat4 proj;
 
 void main()
 {
-	gl_Position = proj * view * model * cb;
 	fragpos = vec3(model * cb);
 	normal = mat3(transpose(inverse(model))) * nb;
 	texcoord = tc;
+
+	gl_Position = proj * view * vec4(fragpos, 1.0);
 }
 
 #shader fragment
