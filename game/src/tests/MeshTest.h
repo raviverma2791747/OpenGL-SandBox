@@ -10,11 +10,6 @@
 
 namespace test
 {
-	struct Vertex
-	{
-		glm::vec3 Position;
-		glm::vec3 Normal;
-	};
 
 	class MeshTest : public Test
 	{
@@ -26,7 +21,7 @@ namespace test
 		void OnRender() override;
 		void OnImGuiRender() override;
 	private:
-		std::unique_ptr<Mesh> m_mesh;
+		std::unique_ptr<Mesh<Vertex2>> m_mesh;
 		glm::mat4 m_proj;
 		glm::vec4 m_color;
 		glm::vec3 m_translate;

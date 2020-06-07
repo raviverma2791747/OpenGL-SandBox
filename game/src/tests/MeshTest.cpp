@@ -26,7 +26,7 @@ namespace test
         GLCall(glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA));
         GLCall(glEnable(GL_DEPTH_TEST));
         GLCall(glDepthFunc(GL_LESS));
-        m_mesh = std::make_unique<Mesh>("Res/models/male/MaleBodyMesh.obj", "Res/models/male/Male.shader");
+        m_mesh = std::make_unique<Mesh<Vertex2>>("Res/models/male/MaleBodyMesh.obj", "Res/models/male/Male.shader");
     }
 
     MeshTest::~MeshTest()
