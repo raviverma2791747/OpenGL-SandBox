@@ -24,3 +24,7 @@ A opengl sandbox contains opengl examples
 
 <br>Material Test<br>
 ![](https://github.com/raviverma2791747/OpenGL-SandBox/blob/master/game/Assets/material%20test.png)
+
+<br>Mesh with no texture Test<br>
+![](https://github.com/raviverma2791747/OpenGL-SandBox/blob/master/game/Assets/meshtest.png)
+
